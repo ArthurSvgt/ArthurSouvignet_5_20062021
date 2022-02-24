@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="../icones/css/all.css" rel="stylesheet">
+    <title>Panier</title>
+</head>
+
+<body>
+    <header>
+        <h1>Orinoco</h1>
+        <ul>
+            <li>Accueil</li>
+            <li>Produits</li>
+            <li>Panier</li>
+        </ul>
+
+        <div class="icons">
+            <a href="#">
+                <p><i class="fas fa-user"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fas fa-heart"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fas fa-shopping-cart"></i></p>
+            </a>
+        </div>
+    </header>
+
+    <h1 id="cart_title">Votre panier</h1>
+    <hr>
+
+
+    <div class="container" id="list_products">
+
+    </div>
+
+    <div id="divTotal">
+
+        <h2>Prix total:<span class="totalPanier"></span>€</h2>
+
+        
+    </div>
+
+    <div>
+        <form action="" method="POST">
+            <div>
+              <label for="say">Prénom</label>
+              <input name="prenom" id="prenom" type="text" required>
+            </div>
+            <div>
+                <label for="say">Nom</label>
+                <input name="nom" id="nom" type="text" required>
+            </div>
+            <div>
+                <label for="say">Adresse</label>
+                <input name="adresse" id="adresse" type="text" required>
+            </div>
+            <div>
+              <label for="say">Ville</label>
+              <input name="ville" id="ville" type="text" required>
+            </div>
+            <div>
+                <label for="say">Mail</label>
+                <input name="mail" id="mail" type="mail" required>
+            </div>
+            <div>
+              <button id="btncommande">Passer ma commande !</button>
+            </div>
+          </form>
+    </div>
+
+    <footer>
+        <h1>Nous contacter</h1>
+        <div class="social_container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    <script src="panier.js"></script>
+
+</body>
+
+</html>

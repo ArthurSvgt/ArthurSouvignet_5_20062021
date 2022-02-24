@@ -1,78 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="icones/css/all.css" rel="stylesheet">
+    <title>Orinoco</title>
 </head>
+
 <body>
     <header>
         <h1>Orinoco</h1>
-        <nav>
             <ul>
-            <li>Accueil</li>
-            <li>Panier</li>
+                <li>Accueil</li>
+                <li>Produits</li>
+                <li>Panier</li>
             </ul>
-        </nav>
+
+            <div class="icons">
+                <a href="#">
+                    <p><i class="fas fa-user"></i></p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-heart"></i></p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-shopping-cart"></i></p>
+                </a>
+            </div>
     </header>
-    <div>
-        <h1>Peluche 1</h1>
-    <!-- Mettre img teddy avec l'api -->
-    <p>Description du produit Description du produit  Description du produit Description du produit Description du produit Description du produit Description du produit </p>
-    
-    <form method="post" action="exemple.php">
-        <p>
-            <label for="quantity">Nombre de produit(s)</label><br/>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </p>
-     </form>
-    </div>
 
-    <div>
-        <h1>Peluche 2</h1>
-    <!-- Mettre img teddy avec l'api -->
-    <p>Description du produit Description du produit  Description du produit Description du produit Description du produit Description du produit Description du produit </p>
-    
-    <form method="post" action="exemple.php">
-        <p>
-            <label for="quantity">Nombre de produit(s)</label><br/>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </p>
-     </form>
+    <div class="container" id="list_products">
+        <!-- 
+        <div class="product">
+            <img src="http://localhost:3000/images/teddy_1.jpg">
+            <div class="desc_product">
+                <h1>Ours en peluche</h1>
+                <p>Fait main</p>
+                <p class="price">99.99€</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="http://localhost:3000/images/teddy_2.jpg">
+            <div class="desc_product">
+                <h1>Ours en peluche</h1>
+                <p>Fait main</p>
+                <p class="price">92.99€</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="http://localhost:3000/images/teddy_3.jpg">
+            <div class="desc_product">
+                <h1>Ours en peluche</h1>
+                <p>Fait main</p>
+                <p class="price">82.99€</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="http://localhost:3000/images/teddy_4.jpg">
+            <div class="desc_product">
+                <h1>Ours en peluche</h1>
+                <p>Fait main</p>
+                <p class="price">74.99€</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="http://localhost:3000/images/teddy_5.jpg">
+            <div class="desc_product">
+                <h1>Ours en peluche</h1>
+                <p>Fait main</p>
+                <p class="price">109.99€</p>
+            </div>
+        </div>
+         -->
     </div>
-
-    <div>
-        <h1>Peluche 3</h1>
-    <!-- Mettre img teddy avec l'api -->
-    <p>Description du produit Description du produit  Description du produit Description du produit Description du produit Description du produit Description du produit </p>
-    
-    <form method="post" action="exemple.php">
-        <p>
-            <label for="quantity">Nombre de produit(s)</label><br/>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </p>
-     </form>
-    </div>
-
     <footer>
-        <ul>
-            <li>Acceuil</li>
-            <li><a href=mailto:exemple@exemple.com>Contact</a></li>
-        </ul>
+        <h1>Nous contacter</h1>
+        <div class="social_container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
     </footer>
+    <script src="index.js"></script>
 </body>
+
+
 </html>

@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../webfonts/Roboto-ThinItalic-webfont.eot');
+    src: url('../webfonts/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('../webfonts/Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('../webfonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+html {
+    height: 100%;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 10px;
+    font-family: "Roboto";
+    background-color: rgb(238, 238, 238);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    font-size: 2em;
+    background-color: rgb(180, 180, 180);
+    
+
+    h1 {
+        margin-left: 3%;
+    }
+
+    ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+        }
+
+    li {
+        width: 33%;
+        margin-left: 17%;
+    }
+            }
+
+.icons {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 5%;
+    font-size: 0.5em;
+    
+
+    a {
+        padding-right: 20%;
+    }
+
+    p {
+    
+    color: black;
+    }  
+}
+
+footer
+{
+    background-color: rgb(180, 180, 180);  
+    text-align: center;
+    margin-top: 5%;
+    
+    h1 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .social_container {
+        
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3%;
+
+    }
+
+    a {
+        font-size: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: black;
+    }
+
+}
+
+@media (max-width: 800px) {
+    html, body {
+      font-size: 0.7em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+        li {
+            margin-left: 0;
+        }
+    }
+
+    .icons {
+        font-size: 0.3em;
+        margin: auto;
+        
+
+        a {
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-bottom: 2em;
+        }
+    }
+
+    .container {
+        margin-top: 10%;
+
+        h1 {
+            font-size: 1.5em;
+            }
+    p {
+        font-size: 1.3em;
+        }
+    }
+    
+}
