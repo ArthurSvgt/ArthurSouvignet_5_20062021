@@ -12,24 +12,24 @@
 
 <body>
     <header>
-        <h1>Orinoco</h1>
-        <ul>
-            <li>Accueil</li>
-            <li>Produits</li>
-            <li>Panier</li>
-        </ul>
+        <h1><a href="../index.html">Orinoco</a></h1>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li>Produits</li>
+                <li><a href="index.html">Panier</a></li>
+            </ul>
 
-        <div class="icons">
-            <a href="#">
-                <p><i class="fas fa-user"></i></p>
-            </a>
-            <a href="#">
-                <p><i class="fas fa-heart"></i></p>
-            </a>
-            <a href="#">
-                <p><i class="fas fa-shopping-cart"></i></p>
-            </a>
-        </div>
+            <div class="icons">
+                <a href="#">
+                    <p><i class="fas fa-user"></i></p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-heart"></i></p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-shopping-cart"></i></p>
+                </a>
+            </div>
     </header>
 
     <h1 id="cart_title">Votre panier</h1>
@@ -44,35 +44,35 @@
 
         <h2>Prix total:<span class="totalPanier"></span>€</h2>
 
-        
+
     </div>
 
     <div>
-        <form action="" method="POST">
+        <form method="POST">
             <div>
-              <label for="say">Prénom</label>
-              <input name="prenom" id="prenom" type="text" required>
+                <label for="prenom">Prénom</label>
+                <input name="prenom" id="prenom" type="text" required>
             </div>
             <div>
-                <label for="say">Nom</label>
+                <label for="nom">Nom</label>
                 <input name="nom" id="nom" type="text" required>
             </div>
             <div>
-                <label for="say">Adresse</label>
+                <label for="adresse">Adresse</label>
                 <input name="adresse" id="adresse" type="text" required>
             </div>
             <div>
-              <label for="say">Ville</label>
-              <input name="ville" id="ville" type="text" required>
+                <label for="ville">Ville</label>
+                <input name="ville" id="ville" type="text" required>
             </div>
             <div>
-                <label for="say">Mail</label>
-                <input name="mail" id="mail" type="mail" required>
+                <label for="mail">Mail</label>
+                <input name="mail" id="mail" type="email" required>
             </div>
             <div>
-              <button id="btncommande">Passer ma commande !</button>
+                    <button id="btncommande" type="submit" a href="">Passer ma commande !</button>
             </div>
-          </form>
+        </form>
     </div>
 
     <footer>

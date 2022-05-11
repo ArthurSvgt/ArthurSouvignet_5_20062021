@@ -9,7 +9,6 @@ function ajoutPanier () {
     let imageUrl = document.getElementById('imageUrl').src
     let price = document.getElementById('price').textContent
     let qt = document.getElementById('qt').value
-    console.log(qt);
     var product = {
         'ref':id,
         'name':name,
@@ -23,28 +22,27 @@ function ajoutPanier () {
     
     if (localStorage.getItem ('products')) {
         products =  JSON.parse (localStorage.getItem ('products'))
-        products.forEach(productCart => {
-            if (productCart.ref==id){
-                productCart.quantite = parseInt(productCart.quantite) + parseInt(qt);  
-            } else {
-                products.push(product);
-            } 
-        });
-       
+        const productFound = products.findIndex(productCart => productCart.ref === id)
+        console.log(productFound);
+
+        if (productFound >= 0) { 
+            products[productFound].quantite = parseInt(products[productFound].quantite) + parseInt(qt);  
+
+        }
+        else {
+            products.push(product);
+        }
+        
     }
     
     else {
         products.push(product);
     }
     
-
-    
-
     /* Récuperer les données du tableau dans le local storage et ajouter
     le produit au tableau */
 
     localStorage.setItem('products', JSON.stringify(products))
-    //console.log(product);
 
     /* Rediriger vers la page panier  */
 
